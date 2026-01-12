@@ -1,0 +1,7 @@
+.DS_Store
+.git
+.gitignore
+*.log
+docker-compose.override.yml
+.env
+.env.local
