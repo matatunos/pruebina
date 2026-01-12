@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefónica - Instrucciones de Instalación</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page { page-break-after: always; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #667eea;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 10px;
+        }
+        
+        h3 {
+            color: #5568d3;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .step-box {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 12px;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+        
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        
+        .code-block {
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px;
+            margin: 12px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        
+        .info {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .version-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 0 5px;
+        }
+        
+        .feature-list {
+            columns: 2;
+            column-gap: 20px;
+        }
+        
+        .feature-list li {
+            break-inside: avoid;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Página 1: Portada -->
+    <div class="page">
+        <div class="header">
+            <h1>📱 Agenda Telefónica</h1>
+            <p>Manual Técnico de Instalación</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 80px;">
+            <div style="font-size: 60px; margin-bottom: 30px;">📋</div>
+            <p style="font-size: 18px; margin-bottom: 40px;"><strong>Gestiona tus contactos fácilmente</strong></p>
+            
+            <div style="margin-top: 80px;">
+                <p><strong>Versión:</strong> 1.0.0</p>
+                <p><strong>Fecha:</strong> Enero 12, 2026</p>
+                <p><strong>Tamaño APK:</strong> 5.5 MB</p>
+            </div>
+            
+            <div style="margin-top: 80px; font-size: 12px; color: #999;">
+                <p>© 2026 Agenda Telefónica</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Página 2: Tabla de Contenidos -->
+    <div class="page">
+        <div class="header">
+            <h1>Índice</h1>
+        </div>
+        
+        <ol style="font-size: 14px;">
+            <li style="margin-bottom: 15px;"><strong>Requisitos del Sistema</strong> - Verificar compatibilidad</li>
+            <li style="margin-bottom: 15px;"><strong>Instalación del APK</strong> - Paso a paso</li>
+            <li style="margin-bottom: 15px;"><strong>Primeros Pasos</strong> - Iniciar la aplicación</li>
+            <li style="margin-bottom: 15px;"><strong>Operaciones Básicas</strong> - Agregar, editar, eliminar</li>
+            <li style="margin-bottom: 15px;"><strong>Características Principales</strong> - Funciones disponibles</li>
+            <li style="margin-bottom: 15px;"><strong>Almacenamiento de Datos</strong> - Seguridad y privacidad</li>
+            <li style="margin-bottom: 15px;"><strong>Solución de Problemas</strong> - FAQ y errores comunes</li>
+            <li style="margin-bottom: 15px;"><strong>Actualizaciones Futuras</strong> - Roadmap</li>
+        </ol>
+    </div>
+    
+    <!-- Página 3: Requisitos -->
+    <div class="page">
+        <div class="header">
+            <h1>Requisitos del Sistema</h1>
+        </div>
+        
+        <h2>Hardware Mínimo</h2>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Requisito Mínimo</th>
+                <th>Recomendado</th>
+            </tr>
+            <tr>
+                <td>Versión Android</td>
+                <td>5.0 (API 21)</td>
+                <td>10.0 o superior</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>512 MB</td>
+                <td>2 GB o más</td>
+            </tr>
+            <tr>
+                <td>Espacio en Disco</td>
+                <td>50 MB</td>
+                <td>100 MB o más</td>
+            </tr>
+            <tr>
+                <td>Pantalla</td>
+                <td>4.5 pulgadas</td>
+                <td>5.0+ pulgadas</td>
+            </tr>
+            <tr>
+                <td>Procesador</td>
+                <td>ARMv7 o superior</td>
+                <td>ARM64</td>
+            </tr>
+        </table>
+        
+        <h2>Verificar Versión Android</h2>
+        <ol>
+            <li>Abre <code>Configuración</code></li>
+            <li>Busca <code>Acerca del teléfono</code></li>
+            <li>Verifica <code>Versión de Android</code></li>
+        </ol>
+        
+        <div class="info">
+            <strong>ℹ️ Nota:</strong> Si tu dispositivo tiene Android inferior a 5.0, 
+            no podrá instalar esta aplicación. Considera actualizar tu dispositivo.
+        </div>
+    </div>
+    
+    <!-- Página 4: Instalación -->
+    <div class="page">
+        <div class="header">
+            <h1>Instalación del APK</h1>
+        </div>
+        
+        <h2>Método 1: ADB (Línea de Comandos)</h2>
+        
+        <h3>Prerrequisitos</h3>
+        <ul>
+            <li>Android Debug Bridge (ADB) instalado</li>
+            <li>Dispositivo conectado vía USB</li>
+            <li>Depuración USB habilitada en el dispositivo</li>
+        </ul>
+        
+        <h3>Pasos</h3>
+        <ol>
+            <li>Conecta tu dispositivo Android vía USB</li>
+            <li>Abre terminal o símbolo del sistema</li>
+            <li>Navega a la carpeta con el APK</li>
+            <li>Ejecuta el comando:
+                <div class="code-block">adb install -r agenda-app.apk</div>
+            </li>
+            <li>Espera el mensaje: "Success"</li>
+            <li>La app aparecerá en tu lista de aplicaciones</li>
+        </ol>
+        
+        <h2>Método 2: Instalación Manual</h2>
+        
+        <h3>Pasos</h3>
+        <ol>
+            <li>Copia <code>agenda-app.apk</code> a tu dispositivo (vía USB o descarga)</li>
+            <li>Abre <code>Administrador de archivos</code></li>
+            <li>Navega a la carpeta donde guardaste el archivo</li>
+            <li>Toca <code>agenda-app.apk</code></li>
+            <li>Si aparece aviso de "Fuentes desconocidas", toca <code>Instalar de todas formas</code></li>
+            <li>Espera a que termine la instalación</li>
+            <li>Toca <code>ABRIR</code> para ejecutar la app</li>
+        </ol>
+        
+        <div class="success">
+            <strong>✓ Instalación exitosa:</strong> 
+            La app aparecerá en tu biblioteca de aplicaciones con el icono morado.
+        </div>
+    </div>
+    
+    <!-- Página 5: Primeros Pasos -->
+    <div class="page">
+        <div class="header">
+            <h1>Primeros Pasos</h1>
+        </div>
+        
+        <h2>Abrir la Aplicación</h2>
+        
+        <ol>
+            <li>En tu dispositivo, toca el icono de <strong>Agenda Telefónica</strong></li>
+            <li>Espera a que se cargue la pantalla principal</li>
+            <li>Verás la lista vacía de contactos (si es la primera vez)</li>
+        </ol>
+        
+        <h2>Pantalla Principal</h2>
+        
+        <p>La pantalla principal muestra:</p>
+        
+        <ul>
+            <li><strong>Barra superior:</strong> Título "AGENDA TELEFÓNICA"</li>
+            <li><strong>Área principal:</strong> Lista de contactos (inicialmente vacía)</li>
+            <li><strong>Botón flotante (+):</strong> Para agregar nuevos contactos</li>
+        </ul>
+        
+        <h2>Agregar tu Primer Contacto</h2>
+        
+        <ol>
+            <li>Toca el botón circular <strong>"+"</strong> en la esquina inferior derecha</li>
+            <li>Se abre la pantalla "NUEVO CONTACTO"</li>
+            <li>Ingresa los datos:
+                <ul style="margin-top: 8px;">
+                    <li><code>Nombre:</code> Nombre completo (opcional)</li>
+                    <li><code>Teléfono:</code> Número de teléfono (obligatorio)</li>
+                    <li><code>Email:</code> Correo electrónico (opcional)</li>
+                </ul>
+            </li>
+            <li>Toca el botón <strong>"GUARDAR"</strong></li>
+            <li>Regresa a la lista y verás el contacto agregado</li>
+        </ol>
+        
+        <div class="info">
+            <strong>ℹ️ Información importante:</strong> 
+            El campo "Teléfono" es obligatorio. Sin un número de teléfono, 
+            no se puede guardar el contacto.
+        </div>
+    </div>
+    
+    <!-- Página 6: Operaciones Básicas -->
+    <div class="page">
+        <div class="header">
+            <h1>Operaciones Básicas</h1>
+        </div>
+        
+        <h2>Editar un Contacto</h2>
+        
+        <ol>
+            <li>En la lista de contactos, toca la <strong>tarjeta del contacto</strong> que deseas editar</li>
+            <li>Se abre la pantalla de edición con los datos actuales</li>
+            <li>Modifica los campos necesarios</li>
+            <li>Toca <strong>"GUARDAR"</strong> para confirmar cambios</li>
+            <li>Regresa automáticamente a la lista</li>
+        </ol>
+        
+        <h2>Eliminar un Contacto</h2>
+        
+        <ol>
+            <li>En la lista, toca la <strong>tarjeta del contacto</strong> a eliminar</li>
+            <li>Se abre la pantalla de edición</li>
+            <li>Toca el botón rojo <strong>"ELIMINAR"</strong></li>
+            <li>Se mostrará un diálogo de confirmación</li>
+            <li>Toca <strong>"CONFIRMAR"</strong> para eliminar</li>
+            <li>El contacto se elimina permanentemente</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>⚠️ Advertencia:</strong> La eliminación es permanente y no se puede deshacer. 
+            Asegúrate de querer eliminar el contacto antes de confirmar.
+        </div>
+        
+        <h2>Formulario de Contacto</h2>
+        
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo</th>
+                <th>Requerido</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Texto</td>
+                <td>No</td>
+                <td>Juan García</td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>Texto</td>
+                <td><strong>Sí</strong></td>
+                <td>+34 612 345 678</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Texto</td>
+                <td>No</td>
+                <td>juan@example.com</td>
+            </tr>
+        </table>
+        
+        <h2>Formatos Válidos de Teléfono</h2>
+        
+        <ul>
+            <li>+34 612 345 678 (Internacional con espacios)</li>
+            <li>+1-555-0100 (Internacional con guiones)</li>
+            <li>612345678 (Solo números)</li>
+            <li>612 345 678 (Con espacios)</li>
+            <li>+34612345678 (Internacional sin espacios)</li>
+        </ul>
+    </div>
+    
+    <!-- Página 7: Características y Seguridad -->
+    <div class="page">
+        <div class="header">
+            <h1>Características y Seguridad</h1>
+        </div>
+        
+        <h2>Características Principales</h2>
+        
+        <ul class="feature-list">
+            <li>✅ Agregar contactos ilimitados</li>
+            <li>✅ Editar información de contactos</li>
+            <li>✅ Eliminar contactos</li>
+            <li>✅ Almacenamiento local seguro</li>
+            <li>✅ Base de datos SQLite</li>
+            <li>✅ Interfaz moderna con Material Design</li>
+            <li>✅ Soporte multi-idioma (próximamente)</li>
+            <li>✅ Validación de datos</li>
+            <li>✅ Diseño responsive</li>
+            <li>✅ Sin anuncios</li>
+        </ul>
+        
+        <h2>Almacenamiento de Datos</h2>
+        
+        <p><strong>Tipo de Almacenamiento:</strong> SQLite (Almacenamiento local del dispositivo)</p>
+        
+        <p><strong>Privacidad:</strong> Todos tus contactos se almacenan exclusivamente en tu dispositivo. 
+        No se envía información a ningún servidor externo.</p>
+        
+        <p><strong>Persistencia:</strong> Los contactos se guardan permanentemente incluso si cierras 
+        o desinstales la app (hasta que los elimines manualmente).</p>
+        
+        <h2>Permisos Requeridos</h2>
+        
+        <p>La app solo requiere acceso al almacenamiento interno para guardar y leer los contactos.</p>
+        
+        <ul>
+            <li>✓ <code>WRITE_INTERNAL_STORAGE</code> - Guardar contactos</li>
+            <li>✓ <code>READ_INTERNAL_STORAGE</code> - Leer contactos</li>
+            <li>✗ NO requiere acceso a internet</li>
+            <li>✗ NO requiere acceso a cámara</li>
+            <li>✗ NO requiere acceso a micrófono</li>
+        </ul>
+        
+        <div class="success">
+            <strong>✓ Seguridad:</strong> La aplicación no recopila ni comparte datos personales. 
+            Tu privacidad es importante para nosotros.
+        </div>
+    </div>
+    
+    <!-- Página 8: Solución de Problemas -->
+    <div class="page">
+        <div class="header">
+            <h1>Solución de Problemas</h1>
+        </div>
+        
+        <h2>La app no abre después de instalar</h2>
+        
+        <div class="step-box">
+            <strong>Problema:</strong> La aplicación no se abre al tocar el icono.
+        </div>
+        
+        <p><strong>Soluciones:</strong></p>
+        <ol>
+            <li>Verifica que tengas Android 5.0 o superior</li>
+            <li>Desinstala la app completamente</li>
+            <li>Ejecuta: <code>adb install -r agenda-app.apk</code></li>
+            <li>Borra el caché: <code>adb shell pm clear com.agenda.telefonos</code></li>
+            <li>Reinicia tu dispositivo</li>
+        </ol>
+        
+        <h2>No se guarda el contacto</h2>
+        
+        <div class="step-box">
+            <strong>Problema:</strong> Al tocar "Guardar", el contacto no se agrega a la lista.
+        </div>
+        
+        <p><strong>Soluciones:</strong></p>
+        <ol>
+            <li><strong>Verifica el campo teléfono:</strong> Es obligatorio y no puede estar vacío</li>
+            <li><strong>Espera a que desaparezca el teclado</strong> antes de guardar</li>
+            <li><strong>Verifica el espacio en disco:</strong> Asegúrate de tener al menos 50 MB</li>
+            <li><strong>Intenta nuevamente:</strong> A veces los toques rápidos no registran</li>
+            <li><strong>Reinicia la app</strong> si persiste el problema</li>
+        </ol>
+        
+        <h2>El email no se válida</h2>
+        
+        <div class="step-box">
+            <strong>Problema:</strong> No puedo guardar un contacto con email.
+        </div>
+        
+        <p><strong>Soluciones:</strong></p>
+        <ol>
+            <li>Verifica el formato: <code>usuario@dominio.com</code></li>
+            <li>No incluyas espacios en el email</li>
+            <li>El email es opcional: puedes dejarlo vacío</li>
+            <li>Si no necesitas email, borra el contenido y deja el campo en blanco</li>
+        </ol>
+        
+        <h2>Se eliminó un contacto por error</h2>
+        
+        <div class="warning">
+            <strong>⚠️ Limitación actual:</strong> No hay papelera de reciclaje o recuperación de datos. 
+            En futuras versiones se agregará esta funcionalidad.
+        </div>
+        
+        <p>Por ahora, sé cuidadoso con el botón "Eliminar".</p>
+    </div>
+    
+    <!-- Página 9: Actualizaciones Futuras -->
+    <div class="page">
+        <div class="header">
+            <h1>Actualizaciones Futuras</h1>
+        </div>
+        
+        <h2>Versión 1.1 (Próxima)</h2>
+        
+        <ul>
+            <li>🔍 <strong>Búsqueda rápida</strong> de contactos por nombre</li>
+            <li>⭐ <strong>Favoritos</strong> - Marcar contactos importantes</li>
+            <li>📥 <strong>Exportar a CSV</strong> - Descargar contactos</li>
+            <li>📋 <strong>Importar contactos</strong> desde archivos</li>
+        </ul>
+        
+        <h2>Versión 1.2 (Planificado)</h2>
+        
+        <ul>
+            <li>🔗 <strong>Sincronización Google Contacts</strong></li>
+            <li>📸 <strong>Fotos de perfil</strong> para contactos</li>
+            <li>🏷️ <strong>Categorías y etiquetas</strong></li>
+            <li>📞 <strong>Acceso directo a llamadas</strong></li>
+            <li>💬 <strong>Acceso directo a SMS</strong></li>
+        </ul>
+        
+        <h2>Versión 2.0 (Visión a Largo Plazo)</h2>
+        
+        <ul>
+            <li>🌐 <strong>Aplicación web</strong> complementaria</li>
+            <li>🗑️ <strong>Papelera de reciclaje</strong> para recuperar contactos</li>
+            <li>☁️ <strong>Backup automático en nube</strong></li>
+            <li>🔐 <strong>Cifrado de datos</strong> end-to-end</li>
+            <li>📊 <strong>Estadísticas de contactos</strong></li>
+        </ul>
+        
+        <p style="margin-top: 30px; font-style: italic; color: #666;">
+            Estas características están sujetas a cambios. La empresa se reserva el derecho 
+            de modificar, agregar o eliminar funcionalidades según sea necesario.
+        </p>
+    </div>
+    
+    <!-- Página 10: Especificaciones Técnicas -->
+    <div class="page">
+        <div class="header">
+            <h1>Especificaciones Técnicas</h1>
+        </div>
+        
+        <h2>Información de la Aplicación</h2>
+        
+        <table>
+            <tr>
+                <th>Parámetro</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Agenda Telefónica</td>
+            </tr>
+            <tr>
+                <td>Identificador de Paquete</td>
+                <td><code>com.agenda.telefonos</code></td>
+            </tr>
+            <tr>
+                <td>Versión</td>
+                <td>1.0.0</td>
+            </tr>
+            <tr>
+                <td>Código de Versión</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Min SDK</td>
+                <td>21 (Android 5.0)</td>
+            </tr>
+            <tr>
+                <td>Target SDK</td>
+                <td>33 (Android 13)</td>
+            </tr>
+            <tr>
+                <td>Tamaño APK</td>
+                <td>5.5 MB</td>
+            </tr>
+            <tr>
+                <td>Arquitecturas</td>
+                <td>arm64-v8a, armeabi-v7a</td>
+            </tr>
+        </table>
+        
+        <h2>Lenguajes y Tecnologías</h2>
+        
+        <ul>
+            <li><strong>Lenguaje:</strong> Kotlin 1.8.0</li>
+            <li><strong>Framework Android:</strong> AndroidX</li>
+            <li><strong>Build System:</strong> Gradle 8.0</li>
+            <li><strong>Base de Datos:</strong> SQLite 3</li>
+            <li><strong>UI Framework:</strong> Material Design 3</li>
+        </ul>
+        
+        <h2>Dependencias Principales</h2>
+        
+        <ul>
+            <li>androidx.appcompat:appcompat:1.6.1</li>
+            <li>androidx.constraintlayout:constraintlayout:2.1.4</li>
+            <li>androidx.recyclerview:recyclerview:1.3.0</li>
+            <li>com.google.android.material:material:1.9.0</li>
+            <li>androidx.lifecycle:lifecycle-runtime-ktx:2.6.1</li>
+        </ul>
+    </div>
+    
+    <!-- Página 11: Contacto y Soporte -->
+    <div class="page">
+        <div class="header">
+            <h1>Soporte y Contacto</h1>
+        </div>
+        
+        <h2>Reportar Problemas</h2>
+        
+        <p>Si encuentras algún error o tienes sugerencias para mejorar la aplicación:</p>
+        
+        <ul>
+            <li><strong>GitHub Issues:</strong> Reporta en <code>github.com/matatunos/pruebina</code></li>
+            <li><strong>Email de Soporte:</strong> <code>support@agendatelefonica.com</code></li>
+        </ul>
+        
+        <h2>Apoya el Proyecto</h2>
+        
+        <p>Si te gusta la app, considera:</p>
+        
+        <ul>
+            <li>⭐ Dar una <strong>calificación 5 estrellas</strong></li>
+            <li>💬 Dejar un <strong>comentario positivo</strong></li>
+            <li>🔗 <strong>Compartir</strong> con amigos y familia</li>
+            <li>🐛 Reportar <strong>bugs</strong> para ayudar a mejorar</li>
+        </ul>
+        
+        <h2>Información de Contacto</h2>
+        
+        <div class="info">
+            <p><strong>Desarrollador:</strong> Equipo de Agenda Telefónica</p>
+            <p><strong>Sitio Web:</strong> www.agendatelefonica.com</p>
+            <p><strong>Repositorio:</strong> github.com/matatunos/pruebina</p>
+            <p><strong>Licencia:</strong> Propietaria © 2026</p>
+        </div>
+        
+        <h2>Actualizaciones y Noticias</h2>
+        
+        <p>Sigue nuestro repositorio en GitHub para recibir notificaciones sobre:</p>
+        
+        <ul>
+            <li>Nuevas versiones y actualizaciones</li>
+            <li>Corrección de errores</li>
+            <li>Nuevas características</li>
+            <li>Anuncios importantes</li>
+        </ul>
+        
+        <div class="footer">
+            <p><strong>Gracias por usar Agenda Telefónica</strong></p>
+            <p>Versión 1.0.0 | Enero 12, 2026</p>
+        </div>
+    </div>
+    
+</body>
+</html>
