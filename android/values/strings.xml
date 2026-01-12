@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Agenda</string>
+    <string name="contact_name">Nombre</string>
+    <string name="contact_phone">Teléfono</string>
+    <string name="contact_email">Correo (Opcional)</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="add_contact">Agregar Contacto</string>
+    <string name="empty_state">No hay contactos</string>
+    <string name="empty_state_hint">¡Crea uno para comenzar!</string>
+    <string name="new_contact">Nuevo Contacto</string>
+    <string name="edit_contact">Editar Contacto</string>
+</resources>
