@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#764ba2</color>
+    <color name="background">#f5f5f5</color>
+    <color name="danger">#dc3545</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="primary">#667eea</color>
+    <color name="primary_dark">#5568d3</color>
+    <color name="success">#28a745</color>
+    <color name="surface">#ffffff</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="warning">#ffc107</color>
+    <color name="white">#FFFFFF</color>
+    <string name="add_contact">Agregar Contacto</string>
+    <string name="app_name">Mi Agenda</string>
+    <string name="cancel">Cancelar</string>
+    <string name="contact_email">Correo (Opcional)</string>
+    <string name="contact_name">Nombre</string>
+    <string name="contact_phone">Teléfono</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="edit_contact">Editar Contacto</string>
+    <string name="empty_state">No hay contactos</string>
+    <string name="empty_state_hint">¡Crea uno para comenzar!</string>
+    <string name="new_contact">Nuevo Contacto</string>
+    <string name="save">Guardar</string>
+    <style name="Theme.AgendaTelefonos" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
