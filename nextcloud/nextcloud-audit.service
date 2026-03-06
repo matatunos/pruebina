@@ -1,0 +1,26 @@
+[Unit]
+Description=Nextcloud Audit Log Importer
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment="CONFIG_FILE=/etc/nextcloud-audit-importer/config.conf"
+ExecStart=/usr/local/bin/nextcloud-audit-importer monitor
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/nextcloud-audit-importer /var/log
+ReadOnlyPaths=/var/www/nextcloud/data
+
+[Install]
+WantedBy=multi-user.target
